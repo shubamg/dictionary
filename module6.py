@@ -11,10 +11,10 @@
 
 def main():
     import nltk
-    thisfile = open("E:\sidbi project\project.txt")
-    str1=thisfile.read()
-    text=nltk.word_tokenize(str1)
-    #text=nltk.word_tokenize("This is test . I am eating .")
+    #thisfile = open("E:\sidbi project\project.txt")
+    #str1=thisfile.read()
+    #text=nltk.word_tokenize(str1)
+    text=nltk.word_tokenize("I love you")
     a=nltk.pos_tag(text)
     l = list()
     from nltk.corpus import wordnet as wn
@@ -31,7 +31,7 @@ def main():
                         l1.append(str(sg))
                         print(str(sg)+'\t')
             l.append(l1)
-            thisfile.close()
+            #thisfile.close()
 
 
 if __name__ == '__main__':
